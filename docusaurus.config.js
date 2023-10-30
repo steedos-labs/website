@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Steedos 灵翼',
+  tagline: '基于 Steedos 平台的低代码解决方案套件',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -19,7 +19,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  projectName: 'steedos-labs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -28,8 +28,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh-CN',
+    locales: ['zh-CN','en'],
   },
 
   presets: [
@@ -44,13 +44,13 @@ const config = {
           editUrl:
             'https://github.com/steedos-labs/website/tree/main/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/steedos-labs/website/tree/main/',
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl:
+        //     'https://github.com/steedos-labs/website/tree/main/',
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -64,19 +64,19 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Steedos Labs',
+        title: 'Steedos 灵翼',
         logo: {
           alt: 'Steedos Labs Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'docsSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: '文档',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: '博客', position: 'left'},
           {
             href: 'https://github.com/steedos-labs/',
             label: 'GitHub',
